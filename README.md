@@ -17,13 +17,13 @@ The system uses a **Directed Acyclic Graph (DAG)** to manage the workflow betwee
 
 ```mermaid
 graph LR
-    User[👤 User Input] --> Start((Start))
+    User["👤 User Input"] --> Start((Start))
     Start --> Researcher
     
     subgraph "Agent Team"
-        Researcher[🕵️ Researcher<br/>(DuckDuckGo)]
-        Writer[✍️ Writer<br/>(Drafts Content)]
-        Critic[🧐 Critic<br/>(Audits & Reviews)]
+        Researcher["🕵️ Researcher<br/>(DuckDuckGo)"]
+        Writer["✍️ Writer<br/>(Drafts Content)"]
+        Critic["🧐 Critic<br/>(Audits & Reviews)"]
     end
 
     Researcher -- "Research Data" --> Writer
